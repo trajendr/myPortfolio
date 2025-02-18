@@ -1,101 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanmayi Rajendra | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
-  
-  <section id="home">
-    <h1>Hello, I'm Thanmayi Rajendra</h1>
-    <p>Front-End Developer | Aspiring Full-Stack Engineer</p>
-    <button><a href="#projects">View Projects</a></button>
-    <button><a href="#contact">Contact Me</a></button>
-  </section>
+    <header>
+        <div class="logo">Thanmayi Rajendra</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
- 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hi there! My name is Thanmayi, and I’m a Computer Science graduate student at George Mason University, graduating in May 2025. I’m an aspiring web developer who loves collaborating on projects that combine creativity and technology.
+    <section id="home">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Thanmayi Rajendra</span></h1>
+            <p>Front-End Developer | Aspiring Full-Stack Engineer</p>
+            <div class="button-group">
+                <button onclick="scrollToSection('projects')">View My Work</button>
+                <button onclick="scrollToSection('contact')">Contact Me</button>
+            </div>
+        </div>
+    </section>
 
-        I have experience building user-friendly websites and applications with HTML, CSS, and JavaScript. My recent projects include a quiz app and responsive landing pages, and I’m excited to continue growing my skills in React, Node.js, and PostgreSQL.
-        
-        Outside of coding, I enjoy trying out new recipes and exploring cuisines from different cultures, which inspires me to think creatively and approach challenges with fresh perspectives.</p>
-  </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Computer Science graduate student at George Mason University, passionate about creating interactive and user-friendly web applications.</p>
+    </section>
 
-  
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Quiz App</h3>
-      <p>An interactive app where users answer quiz questions and get a score. Built with HTML, CSS, and JavaScript.</p>
-      <a href="https://trajendr.github.io/quiz-app/" target="_blank">Live Demo</a>  |
-      <a href="https://github.com/trajendr/quiz-app" target="_blank">GitHub</a>
-    
-      <h3>A webpage about cats</h3>
-      <p>A webpage about cats, because I love cats !!</p>
-      <a href="https://trajendr.github.io/catwebpage/" target="_blank">Live Demo</a> |
-      <a href="https://github.com/trajendr/catwebpage" target="_blank">GitHub</a> 
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Quiz App</h3>
+                <p>An interactive quiz application built with HTML, CSS, and JavaScript.</p>
+                <a href="https://trajendr.github.io/quiz-app/" target="_blank">Live Demo</a>
+                <a href="https://github.com/trajendr/quiz-app" target="_blank">GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Cat Webpage</h3>
+                <p>A fun webpage about cats.</p>
+                <a href="https://trajendr.github.io/catwebpage/" target="_blank">Live Demo</a>
+                <a href="https://github.com/trajendr/catwebpage" target="_blank">GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Memory Card Game</h3>
+                <p>Test your memory and challenge yourself! Match the cards and see how fast you can win!</p>
+                <a href="https://trajendr.github.io/Memory-Card-Game/" target="_blank">Live Demo</a>
+                <a href="https://github.com/trajendr/Memory-Card-Game" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
 
-      <h3>A quote</h3>
-      <p>Just a quote for motivation.</p>
-      <a href="https://trajendr.github.io/quote/" target="_blank">Live Demo</a> |
-      <a href="https://github.com/trajendr/quote" target="_blank">GitHub</a>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Git</span>
+        </div>
+    </section>
 
-      <h3>Resume</h3>
-      <p>Just a basic version my resume.</p>
-      <a href="https://trajendr.github.io/resume/" target="_blank">Live Demo</a> |
-      <a href="https://github.com/trajendr/resume" target="_blank">GitHub</a>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>Email: t@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/thanmayi-rajendra-3739641a1/" target="_blank">Thanmayi Rajendra</a></p>
+    </section>
 
-    
-    </div>
+    <footer>
+        <p>© 2025 Thanmayi Rajendra. All Rights Reserved.</p>
+    </footer>
 
-  </section>
-
-  
-  <section id="skills">
-    <h2>Skills</h2>
-    <div>
-        <h4>HTML</h4>
-        <h4>CSS</h4>
-        <h4>JavaScript</h4>
-        <h4>React</h4>
-        <h4>Node.js</h4>
-        <h4>Git</h4>
-    </div>
-  </section>
-
- 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p>Email: t@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/thanmayi-rajendra-3739641a1/" target="_blank">Thanmayi Rajendra</a></p>
-  </section>
-
- 
-  <footer>
-    <p>&copy; 2025 Thanmayi Rajendra. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
