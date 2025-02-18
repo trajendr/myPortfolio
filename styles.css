@@ -1,100 +1,219 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
     color: #333;
-  }
-  
-  nav {
-    background: #333;
-    padding: 10px 0;
-  }
-  
-  nav ul {
+    background: #fdfdfd;
+}
+
+
+nav {
+    background: #222;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 22px;
+    color: #ff7eb3;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: #fff;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-  }
-  
-  section {
-    padding: 50px 20px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff7eb3;
+}
+
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
     text-align: center;
-  }
-   
-  #about h2{
-    background-color: #a4d8f6;
-    
-  }
-  #projects h2{
-    background-color: #a4d8f6;
-    
-  }
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
 
-  #skills h2{
-    background-color: #a4d8f6;
-    
-  }
+.hero-content h1 {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+}
 
-  #contact h2{
-    background-color: #a4d8f6;
-    
-  }
-  #home {
-    background: #5bb7ce;
-    color: #fff;
-    padding: 100px 20px;
-  }
-  
-  #home h1 {
-    font-size: 2.5rem;
-  }
-  
-  #home button a {
-    color: #271362;
-    text-decoration: none;
-  }
-  
-  .project {
-    margin: 20px 0;
-  }
-  
-  .project a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  form input, form textarea {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-    padding: 10px;
-    border: 1px solid #ddd;
-  }
-  
-  form button {
-    background: #104d8a;
-    color: #fff;
-    padding: 10px 20px;
+.highlight {
+    color: #ff7eb3;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.button-group button {
+    background: #ff7eb3;
+    color: white;
+    padding: 12px 24px;
     border: none;
     cursor: pointer;
-  }
-  
-  footer {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+.button-group button:hover {
+    background: #ff5e91;
+}
+
+
+section {
+    padding: 80px 20px;
     text-align: center;
-  }
-  
+}
+
+
+#about {
+    background: #faf3fc;
+    padding: 100px 20px;
+}
+
+#projects {
+    background: #f3f1fd;
+    padding: 100px 20px;
+}
+
+#contact {
+    background: #f2f8ff;
+    padding: 100px 20px;
+}
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-left: 5px solid #6a11cb;
+    text-align: left;
+}
+
+.project-card h3 {
+    color: #6a11cb;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2575fc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills-container span {
+    background: #6a11cb;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills-container span:hover {
+    transform: scale(1.1);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 80%;
+    margin: 10px auto;
+    padding: 12px;
+    border: 2px solid #6a11cb;
+    border-radius: 8px;
+}
+
+form button {
+    background: #6a11cb;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+form button:hover {
+    background: #4b0fa8;
+}
+
+
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center; /* Centers the buttons horizontally */
+    align-items: center; /* Centers the buttons vertically */
+}
